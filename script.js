@@ -32,6 +32,7 @@ function createMeme() {
     div.appendChild(bottomText);
     div.appendChild(overlay);
     overlay.appendChild(btn);
+    btn.innerHTML = '<i class="fa fa-trash fa-3x"></i>';
 
     let memes = document.getElementsByClassName("meme-section")[0];
     memes.appendChild(div);

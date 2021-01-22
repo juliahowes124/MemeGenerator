@@ -5,17 +5,17 @@ body {
 }
 
 header {
-  text-align: center;
   font-size: 4rem;
   padding: 1rem;
+  text-align: center;
 }
 
 .form-div {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  margin: 2rem 25%;
   font-size: 1.2rem;
+  margin: 2rem 25%;
+  width: 50%;
 }
 
 .field {
@@ -27,47 +27,47 @@ header {
   justify-content: center;
 }
 .meme-div {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 5%;
-  margin: 1rem;
   background-size: cover;
+  border-radius: 5%;
   display: flex;
   flex-direction: column;
+  height: 20rem;
   justify-content: space-between;
+  margin: 1rem;
   text-align: center;
+  width: 20rem;
 }
 
 p {
-  font-size: 1.5rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.5rem;
   letter-spacing: 0.05rem;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
   margin: 0.5rem;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
 }
 
 .overlay {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 5%;
   background-color: white;
-  position: absolute;
+  border-radius: 5%;
+  height: 20rem;
   opacity: 0%;
+  position: absolute;
+  width: 20rem;
 }
 
 .create-btn {
   background-color: #cb2d6f;
   border: none;
-  width: fit-content;
-  cursor: pointer;
-  margin-left: auto;
-  padding: 0.75rem;
   border-radius: 2rem;
   color: white;
-  font-size: 1.2rem;
+  cursor: pointer;
   font-family: monospace;
+  font-size: 1.2rem;
+  margin-left: auto;
+  padding: 0.75rem;
+  width: fit-content;
 }
 
 .create-btn:hover {
@@ -75,12 +75,14 @@ p {
 }
 
 .delete-btn {
-  top: 90%;
-  left: 45%;
-  width: 10%;
+  border: none;
   cursor: pointer;
+  left: 45%;
+  padding: 0;
   position: absolute;
+  top: 90%;
   transition: all 0.3s ease-in-out 0s;
+  width: 10%;
 }
 
 .meme-div :hover {
