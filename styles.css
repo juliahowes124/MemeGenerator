@@ -1,4 +1,4 @@
-div {
+.meme-div {
   height: 20rem;
   width: 20rem;
   border-radius: 5%;
@@ -15,4 +15,24 @@ p {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: white;
   letter-spacing: 0.05rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  margin: 0.5rem;
+}
+
+.overlay {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 5%;
+  background-color: white;
+  position: absolute;
+  opacity: 0%;
+}
+
+.delete-btn {
+  cursor: pointer;
+}
+
+.meme-div :hover {
+  opacity: 50%;
 }

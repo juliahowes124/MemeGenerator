@@ -10,15 +10,27 @@ function createMeme() {
   let url = document.getElementById("url").value;
   let top = document.getElementById("top").value;
   let bottom = document.getElementById("bottom").value;
+
   let div = document.createElement("div");
+  div.className = "meme-div";
   div.style.backgroundImage = `url(${url})`;
   let topText = document.createElement("p");
   topText.innerText = top;
   let bottomText = document.createElement("p");
   bottomText.innerText = bottom;
+  let overlay = document.createElement("div");
+  overlay.className = "overlay";
+  let btn = document.createElement("button");
+  btn.className = "delete-btn";
+  btn.innerText = "delete";
+  btn.addEventListener("click", function () {
+    div.remove();
+  });
   div.appendChild(topText);
   div.appendChild(bottomText);
+  div.appendChild(overlay);
+  overlay.appendChild(btn);
 
-  let body = document.getElementsByTagName("body")[0];
-  body.appendChild(div);
+  let memes = document.getElementsByTagName("body")[0];
+  memes.appendChild(div);
 }
