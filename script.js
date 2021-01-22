@@ -33,7 +33,7 @@ function createMeme() {
     div.appendChild(overlay);
     overlay.appendChild(btn);
 
-    let memes = document.getElementsByTagName("body")[0];
+    let memes = document.getElementsByClassName("meme-section")[0];
     memes.appendChild(div);
   } else {
     alert("Please enter an image url.");

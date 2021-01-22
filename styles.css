@@ -1,3 +1,31 @@
+body {
+  background-color: #cccccc;
+  color: #0f292f;
+  font-family: monospace;
+}
+
+header {
+  text-align: center;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.form-div {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 2rem 25%;
+  font-size: 1.2rem;
+}
+
+.field {
+  border: 1.5px solid #501f3a;
+}
+.meme-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .meme-div {
   height: 20rem;
   width: 20rem;
@@ -27,6 +55,23 @@ p {
   background-color: white;
   position: absolute;
   opacity: 0%;
+}
+
+.create-btn {
+  background-color: #cb2d6f;
+  border: none;
+  width: fit-content;
+  cursor: pointer;
+  margin-left: auto;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  color: white;
+  font-size: 1.2rem;
+  font-family: monospace;
+}
+
+.create-btn:hover {
+  background-color: #501f3a;
 }
 
 .delete-btn {

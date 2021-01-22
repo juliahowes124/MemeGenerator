@@ -16,15 +16,20 @@
   </head>
   <body>
     <header>Meme Generator</header>
+
     <form action="" id="form">
-      <label for="url">Image Url:</label>
-      <input type="text" id="url" name="url" />
-      <label for="top">Top Text: </label>
-      <input type="text" id="top" name="top" />
-      <label for="bottom">Bottom Text: </label>
-      <input type="text" id="bottom" name="bottom" />
-      <input type="submit" value="Create Meme!" />
+      <div class="form-div">
+        <label for="url">Image Url</label>
+        <input type="text" id="url" name="url" class="field" /><br />
+        <label for="top">Top Text</label>
+        <input type="text" id="top" name="top" class="field" /><br />
+        <label for="bottom">Bottom Text</label>
+        <input type="text" id="bottom" name="bottom" class="field" /><br />
+        <input type="submit" value="Generate" class="create-btn" />
+      </div>
     </form>
+    <hr />
+    <div class="meme-section"></div>
   </body>
   <script src="script.js"></script>
 </html>
