@@ -4,6 +4,7 @@ let form = document.getElementById("form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   createMeme();
+  form.reset();
 });
 
 function createMeme() {
@@ -11,26 +12,30 @@ function createMeme() {
   let top = document.getElementById("top").value;
   let bottom = document.getElementById("bottom").value;
 
-  let div = document.createElement("div");
-  div.className = "meme-div";
-  div.style.backgroundImage = `url(${url})`;
-  let topText = document.createElement("p");
-  topText.innerText = top;
-  let bottomText = document.createElement("p");
-  bottomText.innerText = bottom;
-  let overlay = document.createElement("div");
-  overlay.className = "overlay";
-  let btn = document.createElement("button");
-  btn.className = "delete-btn";
-  btn.innerText = "delete";
-  btn.addEventListener("click", function () {
-    div.remove();
-  });
-  div.appendChild(topText);
-  div.appendChild(bottomText);
-  div.appendChild(overlay);
-  overlay.appendChild(btn);
+  if (url) {
+    let div = document.createElement("div");
+    div.className = "meme-div";
+    div.style.backgroundImage = `url(${url})`;
+    let topText = document.createElement("p");
+    topText.innerText = top;
+    let bottomText = document.createElement("p");
+    bottomText.innerText = bottom;
+    let overlay = document.createElement("div");
+    overlay.className = "overlay";
+    let btn = document.createElement("button");
+    btn.className = "delete-btn";
+    btn.innerText = "D";
+    btn.addEventListener("click", function () {
+      div.remove();
+    });
+    div.appendChild(topText);
+    div.appendChild(bottomText);
+    div.appendChild(overlay);
+    overlay.appendChild(btn);
 
-  let memes = document.getElementsByTagName("body")[0];
-  memes.appendChild(div);
+    let memes = document.getElementsByTagName("body")[0];
+    memes.appendChild(div);
+  } else {
+    alert("Please enter an image url.");
+  }
 }

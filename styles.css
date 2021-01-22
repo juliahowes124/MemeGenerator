@@ -30,9 +30,18 @@ p {
 }
 
 .delete-btn {
+  top: 90%;
+  left: 45%;
+  width: 10%;
   cursor: pointer;
+  position: absolute;
+  transition: all 0.3s ease-in-out 0s;
 }
 
 .meme-div :hover {
   opacity: 50%;
+}
+
+.meme-div:hover .delete-btn {
+  top: 50%;
 }
