@@ -19,7 +19,8 @@ header {
 }
 
 .field {
-  border: 1.5px solid #501f3a;
+  border: 1.5px solid #0f292f;
+  padding: 0.3rem;
 }
 .meme-section {
   display: flex;
@@ -60,7 +61,7 @@ p {
 .create-btn {
   background-color: #cb2d6f;
   border: none;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
   color: white;
   cursor: pointer;
   font-family: monospace;

@@ -24,7 +24,6 @@ function createMeme() {
     overlay.className = "overlay";
     let btn = document.createElement("button");
     btn.className = "delete-btn";
-    btn.innerText = "D";
     btn.addEventListener("click", function () {
       div.remove();
     });
