@@ -11,11 +11,13 @@ function createMeme() {
   let url = document.getElementById("url").value;
   let top = document.getElementById("top").value;
   let bottom = document.getElementById("bottom").value;
+  let fit = document.getElementById("image-fit").value;
 
   if (url) {
     let div = document.createElement("div");
     div.className = "meme-div";
     div.style.backgroundImage = `url(${url})`;
+    div.style.backgroundSize = fit;
     let topText = document.createElement("p");
     topText.innerText = top;
     let bottomText = document.createElement("p");
