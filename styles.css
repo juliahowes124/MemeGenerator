@@ -21,6 +21,7 @@ header {
 .field {
   border: 1.5px solid #0f292f;
   padding: 0.3rem;
+  font-family: monospace;
 }
 .meme-section {
   display: flex;
@@ -95,4 +96,33 @@ p {
 
 .meme-div:hover .delete-btn {
   top: 50%;
+}
+
+.mobile-delete-btn {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  display: none;
+  color: gray;
+  padding: 10px;
+  transform: translate(-80%, -50%);
+}
+
+@media (max-width: 750px) {
+  .form-div {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .meme-div {
+    margin: 2rem;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .mobile-delete-btn {
+    display: block;
+  }
 }

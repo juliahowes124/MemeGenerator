@@ -37,8 +37,16 @@ function createMeme(url, top, bottom, fit) {
     div.remove();
   });
 
+  let mobileBtn = document.createElement("button");
+  mobileBtn.className = "mobile-delete-btn";
+  mobileBtn.innerHTML = '<i class="fa fa-times fa-2x"></i>';
+  mobileBtn.addEventListener("click", function () {
+    div.remove();
+  });
+
   div.appendChild(topText);
   div.appendChild(bottomText);
+  div.appendChild(mobileBtn);
   div.appendChild(overlay);
   overlay.appendChild(btn);
 
