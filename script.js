@@ -9,7 +9,7 @@ function processForm() {
   let url = document.getElementById("url").value;
   let top = document.getElementById("top").value;
   let bottom = document.getElementById("bottom").value;
-  let fit = document.getElementById("image-fit").value;
+  let fit = document.getElementById("cover").checked ? "cover" : "contain";
   let test = new Image();
   test.addEventListener("load", () => createMeme(url, top, bottom, fit));
   test.addEventListener("error", imageNotFound);

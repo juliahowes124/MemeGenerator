@@ -1,11 +1,11 @@
 body {
   background-color: #cccccc;
   color: #0f292f;
-  font-family: monospace;
+  font-family: Monaco;
 }
 
 header {
-  font-size: 4rem;
+  font-size: 3rem;
   padding: 1rem;
   text-align: center;
 }
@@ -13,21 +13,54 @@ header {
 .form-div {
   display: flex;
   flex-direction: column;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin: 2rem 25%;
   width: 50%;
 }
 
 .field {
-  border: 1.5px solid #0f292f;
-  padding: 0.3rem;
-  font-family: monospace;
+  border-radius: 0.2rem;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  font-family: Monaco;
+  font-size: 0.75rem;
+  padding: 0.2rem;
 }
+
+.radio-div {
+  display: flex;
+}
+
+.radio-div label {
+  margin-right: 2rem;
+}
+
+.radio-div input {
+  margin: auto 0.4rem auto 0;
+}
+
+.create-btn {
+  background-color: #cb2d6f;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+  cursor: pointer;
+  font-family: Monaco;
+  font-size: 1rem;
+  margin-left: auto;
+  padding: 0.75rem;
+  width: fit-content;
+}
+
+.create-btn:hover {
+  background-color: #501f3a;
+}
+
 .meme-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .meme-div {
   background-color: black;
   background-position: center;
@@ -40,6 +73,10 @@ header {
   margin: 1rem;
   text-align: center;
   width: 20rem;
+}
+
+.meme-div :hover {
+  opacity: 50%;
 }
 
 p {
@@ -61,24 +98,6 @@ p {
   width: 20rem;
 }
 
-.create-btn {
-  background-color: #cb2d6f;
-  border: none;
-  border-radius: 0.5rem;
-  color: white;
-  cursor: pointer;
-  font-family: monospace;
-  font-size: 1.2rem;
-  margin-left: auto;
-  margin-top: 2rem;
-  padding: 0.75rem;
-  width: fit-content;
-}
-
-.create-btn:hover {
-  background-color: #501f3a;
-}
-
 .delete-btn {
   border: none;
   cursor: pointer;
@@ -88,10 +107,6 @@ p {
   top: 90%;
   transition: all 0.3s ease-in-out 0s;
   width: 10%;
-}
-
-.meme-div :hover {
-  opacity: 50%;
 }
 
 .meme-div:hover .delete-btn {
@@ -112,6 +127,14 @@ p {
   .form-div {
     width: 100%;
     margin: 1rem 0;
+  }
+
+  .radio-div {
+    justify-content: center;
+  }
+
+  .create-btn {
+    margin-top: 1rem;
   }
 
   .meme-div {
